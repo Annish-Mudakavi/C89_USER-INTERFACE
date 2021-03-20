@@ -52,7 +52,12 @@ export default class BookDonateScreen extends Component{
             </TouchableOpacity>
           }
         bottomDivider
-      />
+      >
+        <ListItem.Content>
+          <ListItem.Title>{item.book_name}</ListItem.Title>
+          <ListItem.Subtitle>{item.reason_to_request}</ListItem.Subtitle>
+        </ListItem.Content>
+      </ListItem>
     )
   }
 
